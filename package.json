@@ -1,0 +1,21 @@
+{
+  "name": "mock-server",
+  "version": "0.1.0",
+  "description": "Koa 实现的 Mock Server",
+  "scripts": {
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/smpower/mock-server.git"
+  },
+  "keywords": [],
+  "author": {
+    "name": "ruofei",
+    "email": "rf.wangchn@foxmail.com"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/smpower/mock-server/issues"
+  },
+  "homepage": "https://github.com/smpower/mock-server#readme"
+}
