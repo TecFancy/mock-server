@@ -3,6 +3,8 @@
   "version": "0.1.0",
   "description": "Koa 实现的 Mock Server",
   "scripts": {
+    "start": "node src/index.js",
+    "ncu": "ncu"
   },
   "repository": {
     "type": "git",
@@ -17,5 +19,15 @@
   "bugs": {
     "url": "https://github.com/smpower/mock-server/issues"
   },
-  "homepage": "https://github.com/smpower/mock-server#readme"
+  "homepage": "https://github.com/smpower/mock-server#readme",
+  "dependencies": {
+    "@koa/cors": "^3.1.0",
+    "koa": "^2.13.1",
+    "koa-body": "^4.2.0",
+    "koa-json": "^2.0.2",
+    "koa-router": "^10.0.0"
+  },
+  "devDependencies": {
+    "npm-check-updates": "^11.4.1"
+  }
 }
