@@ -4,6 +4,7 @@
   "description": "Koa 实现的 Mock Server",
   "scripts": {
     "start": "nodemon src/index.js",
+    "sonar-scanner": "sonar-scanner",
     "ncu": "ncu"
   },
   "repository": {
