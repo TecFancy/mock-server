@@ -11,6 +11,7 @@ router.get("/legalAdvice/getChatWayList", legalAdvice.getChatWayList);
 router.get("/legalAdvice/getChatResultList", legalAdvice.getChatResultList);
 router.get("/legalAdvice/getInqCategoryList", legalAdvice.getInqCategoryList);
 router.get("/legalAdvice/getDetailsData", legalAdvice.getDetailsData);
+router.get("/legalAdvice/legalRecordGet", legalAdvice.legalRecordGet);
 router.get(
   "/sc/bus/system/law/inquiry/saveFirstServicer",
   legalAdvice.saveFirstServicer

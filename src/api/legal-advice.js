@@ -311,6 +311,26 @@ const getDetailsData = (ctx) => {
   };
 };
 
+const legalRecordGet = (ctx) => {
+  ctx.body = {
+    code: "0",
+    data: {
+      chatResult: "", // 跟进结果：normal正常跟进，match_lawyer匹配律师，sub_time约定时间，make_price定价，fail失败
+      chatWay: "", // 沟通方式：phone电话，wechat微信，email邮件，sms短信，other其他
+      content: "", // 跟进记录内容
+      imageUrl: "", // 上传图片 url
+      inquiryNo: "", // 咨询id
+      remark: JSON.stringify({
+        refundApplyReasons: "这是用户申请退款的原因哦",
+      }), // 备注，匹配的律师id、时间选择器的时间、定价等
+    },
+    errorDetail: {},
+    errorInfo: "",
+    msg: "success",
+    title: "success",
+  };
+};
+
 const saveFirstServicer = (ctx) => {
   ctx.body = {
     code: "0",
@@ -329,5 +349,6 @@ module.exports = {
   getChatResultList,
   getInqCategoryList,
   getDetailsData,
+  legalRecordGet,
   saveFirstServicer,
 };
