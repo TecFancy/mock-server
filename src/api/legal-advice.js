@@ -390,6 +390,43 @@ const saveFirstServicer = (ctx) => {
   };
 };
 
+const getExtList = (ctx) => {
+  ctx.body = {
+    code: "0",
+    data: {
+      items: [
+        {
+          name: "Green",
+          surname: "Olive",
+          userId: "111",
+        },
+        {
+          name: "若非",
+          surname: "王",
+          userId: "112",
+        },
+        {
+          name: "Jimmy",
+          surname: "Olive",
+          userId: "113",
+        },
+        {
+          name: "Tristan",
+          surname: "Olive",
+          userId: "114",
+        },
+      ],
+      pageInfo: {
+        pages: 1,
+        totalResults: 1,
+      },
+      pageNumber: 1,
+    },
+    msg: "success",
+    title: "success",
+  };
+};
+
 module.exports = {
   getData,
   getStatus,
@@ -399,4 +436,5 @@ module.exports = {
   getDetailsData,
   legalRecordGet,
   saveFirstServicer,
+  getExtList,
 };

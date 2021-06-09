@@ -5,7 +5,7 @@ const router = new Router();
 
 router.prefix("/api/mock");
 
-router.get("/legalAdviceData", legalAdvice.getData);
+router.post("/legalAdviceData", legalAdvice.getData);
 router.get("/legalAdvice/getStatus", legalAdvice.getStatus);
 router.get("/legalAdvice/getChatWayList", legalAdvice.getChatWayList);
 router.get("/legalAdvice/getChatResultList", legalAdvice.getChatResultList);
@@ -16,5 +16,6 @@ router.get(
   "/sc/bus/system/law/inquiry/saveFirstServicer",
   legalAdvice.saveFirstServicer
 );
+router.post("/legalAdvice/getExtList", legalAdvice.getExtList);
 
 module.exports = router;
