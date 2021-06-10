@@ -9,7 +9,7 @@ router.get("/expert/getSingleExpertInfo", expert.getSingleExpertInfo);
 router.get("/expert/settlementMethodEmun", expert.settlementMethodEmun);
 router.post("/expert/reportOrderList", expert.reportOrderList);
 router.get("/expert/getOrderStatusList", expert.getOrderStatusList);
-router.post("/expert/getOrderSettlementData", expert.getOrderSettlementData);
-router.post("/expert/saveOrderSettlementData", expert.getOrderSettlementData);
+router.post("/expert/getOrderData", expert.getOrderData);
+router.post("/expert/saveOrderSettlementData", expert.saveOrderSettlementData);
 
 module.exports = router;

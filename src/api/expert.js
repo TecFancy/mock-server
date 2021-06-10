@@ -318,7 +318,7 @@ const getOrderStatusList = (ctx) => {
   };
 };
 
-const getOrderSettlementData = (ctx) => {
+const getOrderData = (ctx) => {
   const errorData = {
     code: "13000",
     title: "invalidInputData",
@@ -519,7 +519,7 @@ const getOrderSettlementData = (ctx) => {
   ctx.body = successData;
 };
 
-const saveSettlementOrder = (ctx) => {
+const saveOrderSettlementData = (ctx) => {
   ctx.body = {
     code: "0",
     title: "success",
@@ -532,6 +532,6 @@ module.exports = {
   settlementMethodEmun,
   reportOrderList,
   getOrderStatusList,
-  getOrderSettlementData,
-  saveSettlementOrder,
+  getOrderData,
+  saveOrderSettlementData,
 };
