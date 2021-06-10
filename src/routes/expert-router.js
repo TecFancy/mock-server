@@ -11,5 +11,9 @@ router.post("/expert/reportOrderList", expert.reportOrderList);
 router.get("/expert/getOrderStatusList", expert.getOrderStatusList);
 router.post("/expert/getOrderData", expert.getOrderData);
 router.post("/expert/saveOrderSettlementData", expert.saveOrderSettlementData);
+router.post(
+  "/expert/saveSettlementVoucherData",
+  expert.saveSettlementVoucherData
+);
 
 module.exports = router;

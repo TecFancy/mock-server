@@ -98,7 +98,31 @@ const reportOrderList = (ctx) => {
       pageInfo: { totalResults: 598, pages: 30 },
       items: [
         {
-          orderNumber: "ORD2021060716230322050001",
+          orderNumber: "ORD2021060816231439720001",
+          initiator: "联信",
+          reportComName: "sdfsdfsd",
+          clientUserId: "A64108874",
+          expertUserId: "E95431096",
+          clientUserName: "",
+          expertUserName: "jielun",
+          clientUserSurname: "邱丽璇",
+          expertUserSurname: "zhou",
+          createTime: "2021-06-08 17:19:38",
+          updateTime: "2021-06-08 17:20:43",
+          status: "CAN_SETTLEMENT",
+          expertOffer: "123",
+          settlementPrice: 222,
+          settlementCurrencyType: "USD",
+          rmbPrice: 100,
+          platformPrice: 20,
+          statusInfo: {
+            code: "BACK_PAY_PROCESS",
+            chineseValue: "BACK_PAY_PROCESS",
+            englishValue: "BACK_PAY_PROCESS",
+          },
+        },
+        {
+          orderNumber: "ORD2021060716230322050002",
           initiator: "联信",
           reportComName: "sdfsdfsd",
           clientUserId: "A64108874",
@@ -122,7 +146,7 @@ const reportOrderList = (ctx) => {
           },
         },
         {
-          orderNumber: "ORD2021052016214940360001",
+          orderNumber: "ORD2021052016214940360003",
           initiator: "联信",
           reportComName: "89欧陆",
           clientUserId: "A25326544",
@@ -146,7 +170,7 @@ const reportOrderList = (ctx) => {
           },
         },
         {
-          orderNumber: "ORD2021060816231457990001",
+          orderNumber: "ORD2021060816231457990004",
           initiator: "联信",
           reportComName: "sdfsdfsd",
           clientUserId: "A64108874",
@@ -170,7 +194,7 @@ const reportOrderList = (ctx) => {
           },
         },
         {
-          orderNumber: "ORD2021060816231444060001",
+          orderNumber: "ORD2021060816231444060005",
           initiator: "联信",
           reportComName: "sdfsdfsd",
           clientUserId: "A64108874",
@@ -194,7 +218,7 @@ const reportOrderList = (ctx) => {
           },
         },
         {
-          orderNumber: "ORD2021060816231443660001",
+          orderNumber: "ORD2021060816231443660006",
           initiator: "联信",
           reportComName: "sdfsdfsd",
           clientUserId: "A64108874",
@@ -215,30 +239,6 @@ const reportOrderList = (ctx) => {
             code: "UNPAID",
             chineseValue: "待付款",
             englishValue: "To be paid",
-          },
-        },
-        {
-          orderNumber: "ORD2021060816231439720001",
-          initiator: "联信",
-          reportComName: "sdfsdfsd",
-          clientUserId: "A64108874",
-          expertUserId: "E95431096",
-          clientUserName: "",
-          expertUserName: "jielun",
-          clientUserSurname: "邱丽璇",
-          expertUserSurname: "zhou",
-          createTime: "2021-06-08 17:19:38",
-          updateTime: "2021-06-08 17:20:43",
-          status: "CAN_SETTLEMENT",
-          expertOffer: "123",
-          settlementPrice: 222,
-          settlementCurrencyType: "USD",
-          rmbPrice: 100,
-          platformPrice: 20,
-          statusInfo: {
-            code: "BACK_PAY_PROCESS",
-            chineseValue: "BACK_PAY_PROCESS",
-            englishValue: "BACK_PAY_PROCESS",
           },
         },
       ],
@@ -527,6 +527,14 @@ const saveOrderSettlementData = (ctx) => {
   };
 };
 
+const saveSettlementVoucherData = (ctx) => {
+  ctx.body = {
+    code: "0",
+    title: "success",
+    msg: "success",
+  };
+};
+
 module.exports = {
   getSingleExpertInfo,
   settlementMethodEmun,
@@ -534,4 +542,5 @@ module.exports = {
   getOrderStatusList,
   getOrderData,
   saveOrderSettlementData,
+  saveSettlementVoucherData,
 };
