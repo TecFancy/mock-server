@@ -535,6 +535,35 @@ const saveSettlementVoucherData = (ctx) => {
   };
 };
 
+const reportOrderRecords = (ctx) => {
+  ctx.body = {
+    code: "0",
+    data: {
+      items: [
+        {
+          content: "这里全 TM 备注_这是假数据 哦",
+          createTime: "2021-01-01 12:32:23",
+          title: "订单操作名称 code",
+          userName: "这是用户名哦",
+        },
+        {
+          content: "这里全 TM 备注",
+          createTime: "2021-01-01 12:32:23",
+          title: "订单操作名称 code 2",
+          userName: "这是用户名哦",
+        },
+      ],
+      pageInfo: {
+        pages: 1,
+        totalResults: 21,
+      },
+      pageNumber: 1,
+    },
+    msg: "success",
+    title: "success",
+  };
+};
+
 module.exports = {
   getSingleExpertInfo,
   settlementMethodEmun,
@@ -543,4 +572,5 @@ module.exports = {
   getOrderData,
   saveOrderSettlementData,
   saveSettlementVoucherData,
+  reportOrderRecords,
 };

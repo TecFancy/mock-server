@@ -15,5 +15,6 @@ router.post(
   "/expert/saveSettlementVoucherData",
   expert.saveSettlementVoucherData
 );
+router.post("/expert/reportOrderRecords", expert.reportOrderRecords);
 
 module.exports = router;
